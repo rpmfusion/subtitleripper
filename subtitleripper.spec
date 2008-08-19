@@ -1,7 +1,9 @@
+%define _default_patch_fuzz 2
+
 Summary: 	A tool to rip DVD subtitles
 Name: 		subtitleripper
 Version: 	0.3
-Release: 	5%{?dist}
+Release: 	6%{?dist}
 License: 	GPL
 Group: 		Applications/Multimedia
 URL: 		http://subtitleripper.sourceforge.net/
@@ -50,6 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 
 #-----------------------------------------------------------------------------
 %changelog
+* Tue Aug 19 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0.3-6
+- added _default_patch_fuzz define
+
 * Sun Aug 03 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0.3-5
 - rebuild
 
