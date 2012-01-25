@@ -1,7 +1,7 @@
 Summary: 	A tool to rip DVD subtitles
 Name: 		subtitleripper
 Version: 	0.3.4
-Release: 	8%{?dist}
+Release: 	9%{?dist}
 License: 	GPL
 Group: 		Applications/Multimedia
 URL: 		http://subtitleripper.sourceforge.net/
@@ -50,6 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 
 #-----------------------------------------------------------------------------
 %changelog
+* Wed Jan 25 2012 Nicolas Chauvet <kwizart@gmail.com> - 0.3.4-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
 * Wed Jan 25 2012 Nicolas Chauvet <kwizart@gmail.com> - 0.3.4-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 
