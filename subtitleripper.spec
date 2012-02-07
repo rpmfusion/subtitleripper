@@ -5,7 +5,7 @@ Release: 	10%{?dist}
 License: 	GPL
 Group: 		Applications/Multimedia
 URL: 		http://subtitleripper.sourceforge.net/
-Source0: 	http://switch.dl.sourceforge.net/sourceforge/subtitleripper/%{name}-%{version}-4.tgz
+Source0: 	http://switch.dl.sourceforge.net/sourceforge/subtitleripper/%{name}-0.3-4.tgz
 Patch0:		subtitleripper-0.3-4-nopng.patch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	netpbm-devel zlib-devel
