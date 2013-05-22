@@ -1,0 +1,27 @@
+diff -urNad subtitleripper-0.3.4~/Makefile subtitleripper-0.3.4/Makefile
+--- subtitleripper-0.3.4~/Makefile	2011-02-17 20:51:42.183047389 +0700
++++ subtitleripper-0.3.4/Makefile	2011-02-17 20:52:02.291199592 +0700
+@@ -73,19 +73,19 @@
+ # Target
+ subtitle2pgm: subtitle2pgm.o spudec.o
+ 	@echo "Linking $@"
+-	@$(CC) $(LIBS) $^ -o $@  
++	@$(CC) $^ -o $@ $(LIBS)
+ 
+ subtitle2vobsub: subtitle2vobsub.o vobsub.o 
+ 	@echo "Linking $@"
+-	@$(CC) $(LIBS) $^ -o $@  
++	@$(CC) $^ -o $@ $(LIBS)
+ 
+ srttool: srttool.o
+ 	@echo "Linking $@"
+-	@$(CC) $(LIBS) -g $^ -o $@  
++	@$(CC) -g $^ -o $@ $(LIBS)
+ 
+ vobsub2pgm: vobsub2pgm.o vobsub.o spudec.o
+ 	@echo "Linking $@"
+-	@$(CC) $(LIBS) -g $^ -o $@  
++	@$(CC) -g $^ -o $@ $(LIBS)
+ 
+ .PHONY: clean dist rpm
+ clean:

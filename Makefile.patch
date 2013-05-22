@@ -1,0 +1,16 @@
+--- subtitleripper-0.3.4/Makefile.orig	2013-03-03 03:00:35.598130743 -0500
++++ subtitleripper-0.3.4/Makefile	2013-03-03 03:03:16.889727156 -0500
+@@ -9,7 +9,12 @@
+ 
+ ### enable ppm support ###
+ DEFINES  += -D_HAVE_LIB_PPM_
+-LIBS     += -lppm
++LIBS     += -lnetpbm
++INCLUDES += -I/usr/include/netpbm
++
++
++### getline is defined for us
++DEFINES += -DHAVE_GETLINE
+ 
+ ### enable PNG support ###
+ DEFINES += -D_HAVE_PNG_
