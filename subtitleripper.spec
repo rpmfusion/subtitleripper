@@ -1,7 +1,7 @@
 Summary:	Command line tool to rip DVD subtitles
 Name:		subtitleripper
 Version:	0.3
-Release:	9%{?dist}
+Release:	10%{?dist}
 License:	GPLv2+
 Group:		Applications/Multimedia
 URL:		http://subtitleripper.sourceforge.net/
@@ -45,6 +45,9 @@ install -m 644 *.sed $RPM_BUILD_ROOT%{_datadir}/subtitleripper
 %{_datadir}/%{name}
 
 %changelog
+* Thu Aug 31 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 0.3-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
 * Mon Mar 20 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 0.3-9
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
 
